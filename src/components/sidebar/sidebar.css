@@ -1,0 +1,96 @@
+.menuIcon {
+    position: fixed;
+    border-radius: 50px;
+    z-index: 99;
+    margin: 4px 20px;
+    top: 7px;
+    left: -7px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    width: 40px;
+    height: 40px;
+    background-color: #1c2e46;
+    padding: 10px;
+}
+
+.menuContainer {
+    background-color: #1c2e46;
+    color: white;
+    padding: 15px;
+    height: 100vh;
+    z-index: 10;
+    min-width: 250px;
+}
+
+.menu {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.allChats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+.allChats::-webkit-scrollbar {
+    display: none;
+}
+
+.addIcon {
+    font-size: 25px;
+}
+
+.newChat,
+.chats {
+    display: flex;
+    align-items: end;
+    align-content: start;
+    text-align: center;
+    gap: 10px;
+    max-width: fit-content;
+    border-radius: 8px;
+    transition: all 0.3s linear;
+    padding: 7px 14px;
+    cursor: pointer;
+
+}
+
+.chats {
+    color: #e1e1e1;
+}
+
+.newChat {
+    gap: 5px;
+    padding: 10px;
+}
+
+.newChat:hover {
+    background-color: #293f5d;
+}
+
+.chats:hover {
+    color: white;
+    background-color: #293f5d;
+}
+
+
+@media (max-width:768px) {
+    .menuContainer {
+        position: absolute;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .menuIcon {
+        top: 2px;
+        left: -8px;
+        width: 30px;
+        height: 30px;
+        padding: 7px;
+    }
+}
